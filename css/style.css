@@ -6860,9 +6860,9 @@ section { padding: 80px 0; position: relative; width: 100%; overflow: hidden; z-
   
   .social-icons ul {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 845px;
+    flex-direction: row;
+    position: relative;
+    top: 20px;
   }
 
 }
