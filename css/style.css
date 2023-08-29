@@ -6444,7 +6444,7 @@ body.breakpoint-xl .pricing-table .col-lg-2 .plan-list ul li, body.breakpoint-lg
 -----------------------------------------------------------------*/
 .testimonial .testimonial-item { border: 1px solid #fbfbfb; background-color: #fff; padding: 46px; text-align: center; margin-bottom: 20px; width: 100%; }
 
-.testimonial .testimonial-item > img { border-radius: 50%; display: block; float: none; height: 72px; margin: 0 auto 10px; width: 72px; }
+.testimonial .testimonial-item > img { border-radius: 0%; display: block; float: none; height: 72px; margin: 0 auto 10px; width: 72px; }
 
 .testimonial .testimonial-item > p { font-size: 15px; line-height: 22px; margin-bottom: 0; padding-bottom: 20px; font-weight: 400; margin-top: 10px; text-align: center !important; }
 
@@ -6766,6 +6766,10 @@ section { padding: 80px 0; position: relative; width: 100%; overflow: hidden; z-
 	margin-top:16px;
 }
 
+.titulo-principal {
+  font-size: 48px !important;
+}
+
 @media (max-width: 768px) {
 .logo {
   width: 100% !important;
@@ -6823,6 +6827,7 @@ section { padding: 80px 0; position: relative; width: 100%; overflow: hidden; z-
 
 }
 
+
 @media (max-width: 768px) {
   
   .diminuir-tamanho {
@@ -6875,6 +6880,14 @@ section { padding: 80px 0; position: relative; width: 100%; overflow: hidden; z-
   #topbar.topbar-transparent.dark {
     display: none !important;
   }
+  
+  .padding-0 {
+    padding: 0 !important;
+  }
+
+  .botao02 {
+    width: 100% !important
+  }
 }
 
 @media (min-width: 992px) {
@@ -6925,6 +6938,15 @@ section { padding: 80px 0; position: relative; width: 100%; overflow: hidden; z-
   .padding-top {
     margin-top: 0 !important;
   }
+
+  .titulo-principal {
+    font-size: 2.2em !important;
+  }
+  .subtitle {
+    margin-top: 400px;
+    font-size: 1em;
+    font-weight: 300;
+  }
 }
 
 @media (max-width:374px) {
@@ -6972,7 +6994,73 @@ p, a, span, h4 {
   border-bottom: none !important;
 }
 
+.botao01 {
+  width: 100%;
+}
+
+.botao02 {
+  width: 50%;
+}
+
 .botao01:hover {
-  width: 500px !important;
+  transform: scale(120%);
   background-color: 00224b !important;
+}
+
+.botao02:hover {
+  transform: scale(120%);
+  background-color: 00224b !important;
+}
+
+.cards {
+  max-width: 1200px !important;
+  margin: auto;
+}
+
+@media (max-width: 500px) {
+  .cards {
+    margin: 0 !important;
+  }
+  .padding-cards {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .imagem-contato {
+    width: 200px !important;
+  }
+
+  .lead {
+    font-size: 1em !important;
+  }
+
+  #imagem-desktop {
+    display: none !important;
+  }
+
+  #imagem-mobile {
+    display: flex !important;
+    height: 880px !important;
+    align-items: center;
+  }
+}
+
+@media (min-width: 500px) {
+  .padding-cards {
+    padding: 100px !important;
+  }
+  .imagem-contato {
+    width: 30% !important;
+  }
+
+  #imagem-desktop {
+    display: flex !important;
+    height: 930px !important;
+    align-items: center;
+  }
+
+  #imagem-mobile {
+    display: none !important;
+  }
 }
