@@ -7046,8 +7046,9 @@ p, a, span, h4 {
   }
 
   .subtitle {
-    margin-top: 500px;
+    margin-top: 400px;
     font-size: .8em !important;
+    visibility: hidden !important;
   }
 
   .text-light p {
