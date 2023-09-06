@@ -1399,7 +1399,7 @@ a:not(.btn):not(.badge):not(.btn):not([href]):not([tabindex]) { color: #3c4043; 
 
 .inspiro-slider .slide .container, .inspiro-slider .slide .container-wide { padding-top: 120px; padding-bottom: 100px; -webkit-align-self: center !important; -ms-flex-item-align: center !important; align-self: center !important; }
 
-.inspiro-slider .slide .slide-captions { position: relative; text-align: left; }
+.inspiro-slider .slide .slide-captions { position: relative; text-align: center; }
 
 .inspiro-slider .slide .slide-captions h1 { font-size: 80px; font-weight: 700; line-height: 80px; margin-bottom: 30px; color: #fff; }
 
@@ -6886,7 +6886,9 @@ section { padding: 80px 0; position: relative; width: 100%; overflow: hidden; z-
   }
 
   .botao02 {
-    width: 100% !important
+    width: 80% !important;
+    padding: 10px !important;
+    font-size: 14px !important;
   }
 }
 
@@ -7059,6 +7061,14 @@ p, a, span, h4 {
   #header.dark .header-inner #logo a .logo-dark {
     width: 150px !important;
     height: 100% !important;
+  }
+
+  #slider, .flickity-viewport {
+    height: 400px !important;
+  }
+
+  .background-image {
+    height: 400px !important;
   }
 }
 
