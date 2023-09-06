@@ -4060,9 +4060,9 @@ button.btn.btn-transparent, .btn:not(.close):not(.mfp-close).btn-transparent, a.
 
 button.btn.btn-transparent.btn-inverted, .btn:not(.close):not(.mfp-close).btn-transparent.btn-inverted, a.btn:not([href]):not([tabindex]).btn-transparent.btn-inverted { color: #fff; }
 
-button.btn.btn-primary, .btn:not(.close):not(.mfp-close).btn-primary, a.btn:not([href]):not([tabindex]).btn-primary { background-color: #1c3465; border-color: #103e9b; }
+button.btn.btn-primary, .btn:not(.close):not(.mfp-close).btn-primary, a.btn:not([href]):not([tabindex]).btn-primary { background-color: #46c7ff; border-color: #46c7ff; }
 
-button.btn.btn-primary:hover, button.btn.btn-primary:focus, button.btn.btn-primary:not(:disabled):not(.disabled):active, button.btn.btn-primary:not(:disabled):not(.disabled).active, .btn:not(.close):not(.mfp-close).btn-primary:hover, .btn:not(.close):not(.mfp-close).btn-primary:focus, .btn:not(.close):not(.mfp-close).btn-primary:not(:disabled):not(.disabled):active, .btn:not(.close):not(.mfp-close).btn-primary:not(:disabled):not(.disabled).active, a.btn:not([href]):not([tabindex]).btn-primary:hover, a.btn:not([href]):not([tabindex]).btn-primary:focus, a.btn:not([href]):not([tabindex]).btn-primary:not(:disabled):not(.disabled):active, a.btn:not([href]):not([tabindex]).btn-primary:not(:disabled):not(.disabled).active { background-color: #1c3465; border-color: #103e9b; color: #fff; }
+button.btn.btn-primary:hover, button.btn.btn-primary:focus, button.btn.btn-primary:not(:disabled):not(.disabled):active, button.btn.btn-primary:not(:disabled):not(.disabled).active, .btn:not(.close):not(.mfp-close).btn-primary:hover, .btn:not(.close):not(.mfp-close).btn-primary:focus, .btn:not(.close):not(.mfp-close).btn-primary:not(:disabled):not(.disabled):active, .btn:not(.close):not(.mfp-close).btn-primary:not(:disabled):not(.disabled).active, a.btn:not([href]):not([tabindex]).btn-primary:hover, a.btn:not([href]):not([tabindex]).btn-primary:focus, a.btn:not([href]):not([tabindex]).btn-primary:not(:disabled):not(.disabled):active, a.btn:not([href]):not([tabindex]).btn-primary:not(:disabled):not(.disabled).active { background-color: #46c7ff; border-color: #46c7ff; color: #fff; }
 
 button.btn.btn-secondary, .btn:not(.close):not(.mfp-close).btn-secondary, a.btn:not([href]):not([tabindex]).btn-secondary { background-color: #c1c3ce; border-color: #c1c3ce; }
 
@@ -6940,7 +6940,7 @@ section { padding: 80px 0; position: relative; width: 100%; overflow: hidden; z-
   }
 
   .titulo-principal {
-    font-size: 2.5em !important;
+    font-size: 2.2em !important;
   }
   .subtitle {
     margin-top: 200px;
@@ -7041,8 +7041,23 @@ p, a, span, h4 {
 
   #imagem-mobile {
     display: flex !important;
-    height: 880px !important;
+    height: 920px !important;
     align-items: center;
+  }
+
+  .subtitle {
+    margin-top: 500px;
+    font-size: .8em !important;
+  }
+
+  .text-light p {
+    font-size: .9em !important;
+    margin-bottom: 30px;
+  }
+
+  #header.dark .header-inner #logo a .logo-dark {
+    width: 150px !important;
+    height: 100% !important;
   }
 }
 
@@ -7056,7 +7071,7 @@ p, a, span, h4 {
 
   #imagem-desktop {
     display: flex !important;
-    height: 930px !important;
+    height: 960px !important;
     align-items: center;
   }
 
