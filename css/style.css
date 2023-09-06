@@ -7046,13 +7046,13 @@ p, a, span, h4 {
   }
 
   .subtitle {
-    margin-top: 400px;
+    margin-top: 350px;
     font-size: .8em !important;
     visibility: hidden !important;
   }
 
   .text-light p {
-    font-size: .9em !important;
+    font-size: .8em !important;
     margin-bottom: 30px;
   }
 
