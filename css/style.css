@@ -7041,7 +7041,7 @@ p, a, span, h4 {
 
   #imagem-mobile {
     display: flex !important;
-    height: 920px !important;
+    height: 400px !important;
     align-items: center;
   }
 
@@ -7062,11 +7062,15 @@ p, a, span, h4 {
   }
 
   #slider .flickity-viewport {
-    height: 600px !important;
+    height: 400px !important;
   }
 
   .background-image {
-    height: 600px !important;
+    height: 400px !important;
+  }
+
+  .inspiro-slider {
+    height: 400px !important;
   }
 }
 
