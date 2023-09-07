@@ -6987,6 +6987,9 @@ p, a, span, h4 {
   margin: auto;
 }
 
+
+
+
 @media (max-width: 767px) {
   .cards {
     margin: 0 !important;
@@ -7045,7 +7048,7 @@ p, a, span, h4 {
 
   #imagem-desktop {
     display: flex !important;
-    height: 960px !important;
+    height: 101vh !important;
     align-items: center;
   }
 
@@ -7058,6 +7061,14 @@ p, a, span, h4 {
   }
 
 }  
+
+@media (min-width: 1600px) {
+  #imagem-desktop {
+    display: flex !important;
+    height: 960px !important;
+    align-items: center;
+  }
+}
 
 @media (max-width:767px) {
   #header .header-inner #logo a {
