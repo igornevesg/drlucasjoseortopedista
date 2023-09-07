@@ -4421,7 +4421,7 @@ a.btn:not([href]):not([tabindex]).btn-icon-holder.btn-lg i {
 .heading-creative strong { color: #15274b; }
 
 /*Fixes*/
-#header:not([data-transparent="true"]).dark .heading-creative { color: #fbfbfb; }
+#header:not([data-transparent="true"]).dark .heading-creative { color: #fbfbfb !important; }
 
 /*--------------------------------------------------------
      Tabs
@@ -6917,37 +6917,7 @@ section { padding: 80px 0; position: relative; width: 100%; overflow: hidden; z-
   }
 }
 
-@media (max-width:767px) {
-  #header .header-inner #logo a {
-    float: left;
-    margin-left: 10px;
-  }
-  .call-to-action h3 {
-    text-align: center !important;
-  }
-  .call-to-action .col-lg-5 {
-    text-align: center !important;
-  }
-  .centro {
-    text-align: center !important;
-  }
-  .widget, .widget p {
-    text-align: center !important;
-  }
 
-  .padding-top {
-    margin-top: 0 !important;
-  }
-
-  .titulo-principal {
-    font-size: 2em !important;
-  }
-  .subtitle {
-    margin-top: 200px;
-    font-size: 1em;
-    font-weight: 300;
-  }
-}
 
 @media (max-width:374px) {
   .social-icons ul {
@@ -7017,7 +6987,7 @@ p, a, span, h4 {
   margin: auto;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   .cards {
     margin: 0 !important;
   }
@@ -7035,15 +7005,6 @@ p, a, span, h4 {
     font-size: 1em !important;
   }
 
-  #imagem-desktop {
-    display: none !important;
-  }
-
-  #imagem-mobile {
-    display: flex !important;
-    height: 400px !important;
-    align-items: center;
-  }
 
   .subtitle {
     margin-top: 350px;
@@ -7062,19 +7023,19 @@ p, a, span, h4 {
   }
 
   #slider .flickity-viewport {
-    height: 400px !important;
+    height: 500px !important;
   }
 
   .background-image {
-    height: 400px !important;
+    height: 500px !important;
   }
 
   .inspiro-slider {
-    height: 400px !important;
+    height: 500px !important;
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 767px) {
   .padding-cards {
     padding: 100px !important;
   }
@@ -7091,4 +7052,59 @@ p, a, span, h4 {
   #imagem-mobile {
     display: none !important;
   }
+
+  #sobre-mim {
+    margin-top: -125px;
+  }
+
+}  
+
+@media (max-width:767px) {
+  #header .header-inner #logo a {
+    float: left;
+    margin-left: 10px;
+  }
+  .call-to-action h3 {
+    text-align: center !important;
+  }
+  .call-to-action .col-lg-5 {
+    text-align: center !important;
+  }
+  .centro {
+    text-align: center !important;
+  }
+  .widget, .widget p {
+    text-align: center !important;
+  }
+
+  .padding-top {
+    margin-top: 0 !important;
+  }
+
+  .titulo-principal {
+    font-size: 2em !important;
+  }
+  .subtitle {
+    margin-top: 200px;
+    font-size: 1em;
+    font-weight: 300;
+  }
+  
+  #imagem-desktop {
+    display: none !important;
+  }
+
+  #imagem-mobile {
+    display: flex !important;
+    height: 400px !important;
+    align-items: center;
+  }
+
+  #sobre-mim {
+    margin-top: -75px;
+  }
+}
+
+#slider {
+  margin-top: -250px;
 }
