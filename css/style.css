@@ -7103,6 +7103,12 @@ p, a, span, h4 {
   #sobre-mim {
     margin-top: -75px;
   }
+  
+  .dim_but {
+    padding: 10px !important;
+    font-size: 100% !important;
+    width: 80% !important;
+  }
 }
 
 #slider {
