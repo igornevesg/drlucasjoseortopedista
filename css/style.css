@@ -412,8 +412,6 @@ Topbar
 
 #topbar.topbar-fullwidth > .container { max-width: 100%; padding: 0 30px; }
 
-#topbar { border-bottom: 1px solid #fbfbfb; }
-
 #topbar.topbar-dark, #topbar.dark { background-color: #252525; border-color: rgba(231, 231, 231, 0.25); }
 
 #topbar.topbar-dark .top-menu > li > a, #topbar.topbar-dark .social-icons li a, #topbar.dark .top-menu > li > a, #topbar.dark .social-icons li a { color: #fff !important; }
@@ -522,7 +520,7 @@ Topbar
 
 #header.header-always-fixed .header-inner, #header.header-always-fixed #header-wrap { position: fixed !important; top: 0 !important; }
 
-.dark #header .header-inner, .dark #header #header-wrap, #header.dark .header-inner, #header.dark #header-wrap { background-color: #1e2022; }
+.dark #header .header-inner, .dark #header #header-wrap, #header.dark .header-inner, #header.dark #header-wrap { background-color: #000e1f; }
 
 .dark #header .header-inner #logo a > img, .dark #header .header-inner #logo a [class*="logo-"], .dark #header #header-wrap #logo a > img, .dark #header #header-wrap #logo a [class*="logo-"], #header.dark .header-inner #logo a > img, #header.dark .header-inner #logo a [class*="logo-"], #header.dark #header-wrap #logo a > img, #header.dark #header-wrap #logo a [class*="logo-"] { display: none; }
 
@@ -4475,7 +4473,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu { display: block; }
 
 .social-icons li { float: left; list-style: none; }
 
-.social-icons li a { float: left; height: 32px; width: 32px; line-height: 32px; font-size: 16px; text-align: center !important; margin: 0 4px 4px 0; border-radius: 4px; border: 0; background: transparent; color: #333; overflow: hidden; -webkit-transition: all .3s ease; transition: all .3s ease; }
+.social-icons li a { float: left; height: 32px; width: 32px; line-height: 32px; font-size: 16px; text-align: center !important; margin: 0 4px 4px 0; border-radius: 4px; border: 0; background: transparent; color: white; overflow: hidden; -webkit-transition: all .3s ease; transition: all .3s ease; }
 
 .dark .social-icons li a { color: #fff; }
 
@@ -7025,17 +7023,6 @@ p, a, span, h4 {
     height: 100% !important;
   }
 
-  #slider .flickity-viewport {
-    height: 500px !important;
-  }
-
-  .background-image {
-    height: 500px !important;
-  }
-
-  .inspiro-slider {
-    height: 500px !important;
-  }
 }
 
 @media (min-width: 767px) {
@@ -7048,19 +7035,16 @@ p, a, span, h4 {
 
   #imagem-desktop {
     display: flex !important;
-    height: 101vh !important;
+    height: 85vh !important;
     align-items: center;
   }
 
   #imagem-mobile {
     display: none !important;
   }
+}
 
-  #sobre-mim {
-    margin-top: -125px;
-  }
-
-}  
+  
 
 @media (min-width: 1600px) {
   #imagem-desktop {
@@ -7107,12 +7091,7 @@ p, a, span, h4 {
 
   #imagem-mobile {
     display: flex !important;
-    height: 400px !important;
     align-items: center;
-  }
-
-  #sobre-mim {
-    margin-top: -75px;
   }
   
   .dim_but {
@@ -7120,8 +7099,13 @@ p, a, span, h4 {
     font-size: 100% !important;
     width: 80% !important;
   }
+
+  .inspiro-slider .slide .container {
+    padding-top: 50px !important;
+  }
 }
 
-#slider {
-  margin-top: -250px;
-}
+#header.dark .header-inner #logo a .logo-dark {
+  padding: 5px !important;
+  position: relative;
+  bottom: 5px;
