@@ -6745,6 +6745,13 @@ body[data-bg-image] { background-attachment: fixed; background-position: top cen
 
 section { padding: 80px 0; position: relative; width: 100%; overflow: hidden; z-index: 1; background-color: #fff;}
 
+
+@media (max-width: 1600px) and (min-width: 767px) {
+  .inspiro-slider.slider-fullscreen {
+    height: 85vh !important;
+  }
+} 
+
 .floating{
 	position:fixed;
 	width:60px;
@@ -7043,13 +7050,13 @@ p, a, span, h4 {
   }
 }
 
-  
 
 @media (min-width: 1600px) {
   #imagem-desktop {
     display: flex !important;
     align-items: center;
   }
+  
 }
 
 @media (max-width:767px) {
@@ -7107,3 +7114,4 @@ p, a, span, h4 {
   padding: 5px !important;
   position: relative;
   bottom: 5px;
+}
