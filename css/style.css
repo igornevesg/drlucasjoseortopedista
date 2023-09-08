@@ -7035,7 +7035,6 @@ p, a, span, h4 {
 
   #imagem-desktop {
     display: flex !important;
-    height: 85vh !important;
     align-items: center;
   }
 
@@ -7049,7 +7048,6 @@ p, a, span, h4 {
 @media (min-width: 1600px) {
   #imagem-desktop {
     display: flex !important;
-    height: 960px !important;
     align-items: center;
   }
 }
