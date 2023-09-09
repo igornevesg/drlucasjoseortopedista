@@ -5297,7 +5297,7 @@ div.icon-box:before { display: none !important; }
 
 .icon-box.effect.clean .icon i:after { box-shadow: 0 0 0 0px transparent; }
 
-.icon-box.process { border: 1px solid #888; margin-top: 45px; padding: 0 30px 10px; border-radius: 4px; }
+.icon-box.process { border: 1px solid #888; margin-top: 45px; padding: 0 80px 30px; border-radius: 4px; }
 
 .icon-box.process.effect .icon i:hover:after, .icon-box.process.effect:hover .icon i::after { opacity: 0; border: 0px; }
 
