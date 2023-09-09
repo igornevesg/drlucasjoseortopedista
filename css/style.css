@@ -56,7 +56,10 @@ body .container-wide { width: 100%; margin: 0 auto; padding: 0 60px; }
   body.frame .body-inner { padding: 20px; }
   body.frame .body-inner:before, body.frame .body-inner:after { border: 10px solid #fff; content: ""; position: fixed; width: 20px; z-index: 200; box-shadow: 0px 10px 14px 0 rgba(0, 0, 0, 0.1); top: 20px; bottom: 20px; left: 0; right: auto; }
   body.frame .body-inner:after { left: auto; right: 0; box-shadow: 0px 10px 14px 0 rgba(0, 0, 0, 0.1); }
-  body.frame #scrollTop { right: 46px; } }
+  body.frame #scrollTop { right: 46px; }
+  #icons-mobile {
+    display: none !important;
+  } }
 
 .container-fullwidth { margin: 0 auto; }
 
