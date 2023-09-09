@@ -30,7 +30,6 @@ var INSPIRO = {},
         headerLogo = $("#logo"),
         //Menu
         $mainMenu = $("#mainMenu"),
-        $mainMenuTriggerBtn = $("#mainMenu-trigger a, #mainMenu-trigger button"),
         //Slider
         $slider = $("#slider"),
         $inspiroSlider = $(".inspiro-slider"),
@@ -430,90 +429,7 @@ var INSPIRO = {},
                     processing = false,
                     triggerEvent;
 
-                $triggerButton.on("click", function(e) {
-                    var elem = $(this);
-                    e.preventDefault();
-                    $(window).breakpoints("lessThan", "lg", function() {
-                        var openMenu = function() {
-                            if (!processing) {
-                                processing = true;
-                                Settings.menuIsOpen = true;
-                                if (Settings.submenuLight && Settings.headerHasDarkClass) {
-                                    $header.removeClass("dark");
-                                    Settings.headerDarkClassRemoved = true;
-                                } else {
-                                    if (
-                                        Settings.headerHasDarkClass &&
-                                        Settings.headerDarkClassRemoved
-                                    ) {
-                                        $header.addClass("dark");
-                                    }
-                                }
-                                elem.addClass("toggle-active");
-                                $body.addClass("mainMenu-open");
-                                INSPIRO.header.logoStatus();
-                                $mainMenu.animate({
-                                    "min-height": $window.height(),
-                                }, {
-                                    duration: 500,
-                                    easing: "easeInOutQuart",
-                                    start: function() {
-                                        setTimeout(function() {
-                                            $mainMenu.addClass("menu-animate");
-                                        }, 300);
-                                    },
-                                    complete: function() {
-                                        processing = false;
-                                    },
-                                });
-                            }
-                        };
-                        var closeMenu = function() {
-                            if (!processing) {
-                                processing = true;
-                                Settings.menuIsOpen = false;
-                                INSPIRO.header.logoStatus();
-                                $mainMenu.animate({
-                                    "min-height": 0,
-                                }, {
-                                    start: function() {
-                                        $mainMenu.removeClass("menu-animate");
-                                    },
-                                    done: function() {
-                                        $body.removeClass("mainMenu-open");
-                                        elem.removeClass("toggle-active");
-                                        if (
-                                            Settings.submenuLight &&
-                                            Settings.headerHasDarkClass &&
-                                            Settings.headerDarkClassRemoved &&
-                                            !$header.hasClass("header-sticky")
-                                        ) {
-                                            $header.addClass("dark");
-                                        }
-                                        if (
-                                            Settings.sliderDarkClass &&
-                                            Settings.headerHasDarkClass &&
-                                            Settings.headerDarkClassRemoved
-                                        ) {
-                                            $header.removeClass("dark");
-                                            Settings.headerDarkClassRemoved = true;
-                                        }
-                                    },
-                                    duration: 500,
-                                    easing: "easeInOutQuart",
-                                    complete: function() {
-                                        processing = false;
-                                    },
-                                });
-                            }
-                        };
-                        if (!Settings.menuIsOpen) {
-                            triggerEvent = openMenu();
-                        } else {
-                            triggerEvent = closeMenu();
-                        }
-                    });
-                });
+
 
                 $menuItemLinks.on("click", function(e) {
                     $(this).parent("li").siblings().removeClass("hover-active");
