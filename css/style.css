@@ -7071,6 +7071,10 @@ p, a, span, h4 {
   .inspiro-slider .slide .container {
     padding-top: 50px !important;
   }
+
+  .botao_pag {
+    margin-top: 30px !important;
+  }
 }
 
 #header.dark .header-inner #logo a .logo-dark {
